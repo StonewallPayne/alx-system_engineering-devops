@@ -1,7 +1,7 @@
-# Creates the file holberton in /tmp
+# Creates the file school in /tmp
 
-file { 'holberton':
-  path    => '/tmp/holberton',
+file { 'school':
+  path    => '/tmp/school',
   content => 'I love Puppet',
   owner   => 'www-data',
   group   => 'www-data',
