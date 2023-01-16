@@ -12,7 +12,7 @@ if __name__ == "__main__":
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}".
                         format(userID)).json()
     todos = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}"
-                        .format(userID)).json()
+                         .format(userID)).json()
     with open("{}.csv".format(userID), 'w', newline='') as csvfile:
         taskwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         for task in todos:

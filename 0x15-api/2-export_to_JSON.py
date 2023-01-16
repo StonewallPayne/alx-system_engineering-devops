@@ -13,7 +13,7 @@ if __name__ == "__main__":
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(userID)).json()
     todos = requests.get("https://jsonplaceholder.typicode.com/todos?userId={}"
-                        .format(userID)).json()
+                         .format(userID)).json()
     username = user.get('username')
     tasks = []
     for task in todos:
